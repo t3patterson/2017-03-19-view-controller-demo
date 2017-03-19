@@ -24,6 +24,7 @@
     "express": "4.14.0",
     "express-session": "^1.15.1",
     "jquery": "2.2.4",
+    "margo-css": "^3.1.0",
     "mongoose": "4.8.3",
     "npm-run-all": "4.0.1",
     "passport": "0.3.2",

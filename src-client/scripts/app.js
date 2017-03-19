@@ -1,4 +1,6 @@
 import ReactDOM from 'react-dom'
 import React from 'react'
-	
-ReactDOM.render(<h1>boo yah!</h1>, document.querySelector('#app-container'))
+
+import {ViewController} from './viewController.js'
+
+ReactDOM.render(<ViewController/>, document.querySelector('#app-container'))

@@ -1,18 +1,17 @@
+@import "../../node_modules/margo-css/margo.scss";
+
 * {
 	box-sizing: border-box;
 }
 
 body{
-	font-family: Helvetica;
+	background: #2574A9;
+	margin: 0;
 }
 
-img {
-	width: 100%;
-	display: block;
+#app-container{
+	background: #fff;
+	min-height: 100vh; 
+	padding: .5rem;
 }
 
-h1{
-	text-align: center;
-	font-size: 10vw;
-	color: #2574A9;	
-}
