@@ -3,20 +3,24 @@ import {ACTIONS} from './actions.js'
 
 export const AppRouter = Backbone.Router.extend({
 	initialize: function(){
-		Backbone.history.start()
+		Backbone.history.start();
 	},
 	
 	routes: {
-		'login' : 'goToLogin',
-		'' : 'goToHome'
+		'login': 'routeToLogin',
+		'' : 'routeToHome',
+		'*nomatch': 'routeTo404'
 	},
 
-	goToLogin: function(){
-		ACTIONS.setView('LOGIN')
+	routeToLogin: function(){
+		ACTIONS.setView("LOGIN")
+	},
+
+	routeToHome: function(){
+		ACTIONS.setView("HOME")
 	},
 	
-	goToHome: function(){
-		ACTIONS.setView('HOME')
+	routeTo404: function(){
+		ACTIONS.setView("404")
 	}
-	
 })

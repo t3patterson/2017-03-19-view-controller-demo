@@ -5,8 +5,6 @@ import {STORE} from './store.js'
 
 export const ACTIONS = {
 	setView: function(viewName){
-	   console.log('....setting view.....')
-		console.log(STORE)
 		STORE.setStore('currentView', viewName)
 	}
-}
+} 
