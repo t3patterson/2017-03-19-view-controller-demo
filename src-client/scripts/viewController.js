@@ -7,20 +7,12 @@ import {STORE} from './store.js'
 export const ViewController = React.createClass({
 
 	getInitialState: function(){
-		let stateObj = STORE.getStoreData()
+		let stateObj = {
+			currentView: "HOME"
+		}
 		return stateObj
 	},
 	
-	componentWillMount: function(){
-		let vcComponent = this
-		STORE.onStoreChange(function(){
-			let newStoreState = STORE.getStoreData()
-			vcComponent.setState(newStoreState)
-		})
-
-		let router = new AppRouter()
-	},
-
 	render: function(){
 		let currentView = this.state.currentView
 		let componentToRender
